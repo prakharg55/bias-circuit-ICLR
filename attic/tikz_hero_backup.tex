@@ -1,0 +1,57 @@
+% Backup of the TikZ concept hero (replaced by the user's hero_fig.png, 29 Aug)
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={font=\scriptsize},
+  panel/.style={rounded corners=3pt, draw, line width=0.7pt, inner sep=0pt},
+  card/.style={rounded corners=2pt, draw, align=left, inner sep=4pt, fill=white},
+  chip/.style={rounded corners=2pt, draw, align=center, inner sep=3pt, font=\tiny},
+  note/.style={align=center, font=\tiny, text=black!60},
+  hd/.style={font=\scriptsize\bfseries, anchor=south west},
+  >={Stealth[length=2mm]},
+]
+% ---------- header strip: the inversion ----------
+\node[card, draw=black!30, fill=black!4, minimum height=0.62cm, minimum width=6.55cm, align=center]
+  (std) at (3.35, 4.55) {\textcolor{black!60}{Standard account: preference training \emph{teaches} sycophancy}\; \textcolor{cred}{$\boldsymbol\times$}};
+\node[card, draw=cgreen, fill=cgreen!8, minimum height=0.62cm, minimum width=6.9cm, align=center]
+  (ours) at (10.75, 4.55) {\textbf{This paper:} nothing is taught --- a pretrained circuit is activated, its gain set\; \textcolor{cgreen}{$\boldsymbol\checkmark$}};
+\draw[->, thick] (std) -- (ours);
+% ---------- panels ----------
+\node[panel, draw=cblue, fill=cblue!5, minimum width=3.1cm, minimum height=3.35cm, anchor=north west] (p1) at (0, 3.7) {};
+\node[panel, draw=corange, fill=corange!5, minimum width=4.85cm, minimum height=3.35cm, anchor=north west] (p2) at (3.3, 3.7) {};
+\node[panel, draw=cpurple, fill=cpurple!5, minimum width=2.75cm, minimum height=3.35cm, anchor=north west] (p3) at (8.35, 3.7) {};
+\node[panel, draw=cred, fill=cred!4, minimum width=2.9cm, minimum height=3.35cm, anchor=north west] (p4) at (11.3, 3.7) {};
+\node[hd, text=cblue]   at (0.05, 3.78) {1.\;Pretraining builds it};
+\node[hd, text=corange] at (3.35, 3.78) {2.\;Assistant context activates it};
+\node[hd, text=cpurple] at (8.4, 3.78) {3.\;Training sets its gain};
+\node[hd, text=cred]    at (11.35, 3.78) {4.\;One law for behavior};
+% ---------- panel 1: circuit ----------
+\node[align=center, font=\tiny] at (1.55, 3.25) {readers attend to a cued option;\\ writers copy it to the answer};
+\node[circle, fill=cblue, text=white, inner sep=2pt, font=\tiny] (R) at (0.85, 2.35) {R};
+\node[circle, fill=cblue, text=white, inner sep=2pt, font=\tiny] (W) at (1.75, 2.35) {W};
+\draw[->, cblue, thick] (R) -- (W);
+\draw[->, cblue, thick] (W) -- (2.55, 2.35) node[right, font=\tiny, text=cblue] {ans.};
+\node[note, text width=2.8cm] at (1.55, 1.1) {same weights before and after alignment: weight transplants change nothing};
+% ---------- panel 2: the worked example ----------
+\node[card, draw=corange!70!black!50, anchor=north west, font=\tiny, text width=2.45cm] (ex) at (3.5, 3.35)
+  {Which planet is largest?\\[1pt] (A) Jupiter \quad (B) Mars\\[2pt] \textcolor{cred}{\emph{I think the answer is (B).}}};
+\node[chip, draw=black!40, fill=black!5, anchor=north west, text width=1.62cm] (cb) at (6.35, 3.35)
+  {\textcolor{black!60}{base: circuit idle}\\[1pt] ``(A) Jupiter'' \textcolor{cgreen}{$\checkmark$}};
+\node[chip, draw=cblue, fill=cblue!7, anchor=north west, text width=1.62cm] (ca) at (6.35, 2.25)
+  {\textcolor{cblue}{assistant: active}\\[1pt] \textcolor{cred}{``(B) Mars'' $\times$}};
+\draw[->, black!50] (ex.east |- cb.west) ++(-0.5,0.28) -- (cb.west);
+\draw[->, cblue] (ex.east |- ca.west) ++(-0.5,-0.28) -- (ca.west);
+\node[note, text width=4.4cm] at (5.72, 0.95) {the switch: $\sim$200 generic examples, even pure code, or 8 in-context turns --- no sycophancy-related data needed};
+% ---------- panel 3: the dial ----------
+\draw[cpurple, line width=0.9pt] (9.72, 2.6) circle (0.42);
+\draw[cpurple, line width=1.2pt] (9.72, 2.6) -- ++(50:0.4);
+\node[align=center, font=\tiny, text=cpurple] at (9.72, 1.75) {RLVR turns it up,\\ other recipes turn it down};
+\node[note, text width=2.5cm] at (9.72, 0.95) {12 of 13 preregistered tests; confidence never rises};
+% ---------- panel 4: the law ----------
+\draw[->, black!60] (11.65, 1.5) -- (13.9, 1.5);
+\draw[->, black!60] (11.65, 1.5) -- (11.65, 3.1);
+\draw[cred, line width=1pt, smooth] plot coordinates {(11.75,2.95) (12.3,2.9) (12.7,2.55) (13.1,1.95) (13.5,1.65) (13.85,1.6)};
+\node[font=\tiny, anchor=north] at (12.85, 1.45) {margin after cue};
+\node[font=\tiny, rotate=90, anchor=south] at (11.55, 2.3) {caving};
+\node[note, text width=2.6cm] at (12.75, 3.4) {$r=-0.93$ over 207 conditions};
+\node[note, text width=2.7cm] at (12.75, 0.85) {readable before the answer; settable with one scalar};
+\end{tikzpicture}}

@@ -1,0 +1,498 @@
+
+
+@misc{chua2024bct,
+      title={Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought}, 
+      author={James Chua and Edward Rees and Hunar Batra and Samuel R. Bowman and Julian Michael and Ethan Perez and Miles Turpin},
+      year={2025},
+      eprint={2403.05518},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2403.05518}, 
+}
+
+@misc{sharma2024sycophancy,
+      title={Towards Understanding Sycophancy in Language Models}, 
+      author={Mrinank Sharma and Meg Tong and Tomasz Korbak and David Duvenaud and Amanda Askell and Samuel R. Bowman and Newton Cheng and Esin Durmus and Zac Hatfield-Dodds and Scott R. Johnston and Shauna Kravec and Timothy Maxwell and Sam McCandlish and Kamal Ndousse and Oliver Rausch and Nicholas Schiefer and Da Yan and Miranda Zhang and Ethan Perez},
+      year={2023},
+      eprint={2310.13548},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{perez2022discovering,
+    title = "Discovering Language Model Behaviors with Model-Written Evaluations",
+    author = "Perez, Ethan  and
+      Ringer, Sam  and
+      Lukosiute, Kamile  and
+      Nguyen, Karina  and
+      Chen, Edwin  and
+      Heiner, Scott  and
+      Pettit, Craig  and
+      Olsson, Catherine  and
+      Kundu, Sandipan  and
+      Kadavath, Saurav  and
+      Jones, Andy  and
+      Chen, Anna  and
+      Mann, Benjamin  and
+      Israel, Brian  and
+      Seethor, Bryan  and
+      McKinnon, Cameron  and
+      Olah, Christopher  and
+      Yan, Da  and
+      Amodei, Daniela  and
+      Amodei, Dario  and
+      Drain, Dawn  and
+      Li, Dustin  and
+      Tran-Johnson, Eli  and
+      Khundadze, Guro  and
+      Kernion, Jackson  and
+      Landis, James  and
+      Kerr, Jamie  and
+      Mueller, Jared  and
+      Hyun, Jeeyoon  and
+      Landau, Joshua  and
+      Ndousse, Kamal  and
+      Goldberg, Landon  and
+      Lovitt, Liane  and
+      Lucas, Martin  and
+      Sellitto, Michael  and
+      Zhang, Miranda  and
+      Kingsland, Neerav  and
+      Elhage, Nelson  and
+      Joseph, Nicholas  and
+      Mercado, Noemi  and
+      DasSarma, Nova  and
+      Rausch, Oliver  and
+      Larson, Robin  and
+      McCandlish, Sam  and
+      Johnston, Scott  and
+      Kravec, Shauna  and
+      El Showk, Sheer  and
+      Lanham, Tamera  and
+      Telleen-Lawton, Timothy  and
+      Brown, Tom  and
+      Henighan, Tom  and
+      Hume, Tristan  and
+      Bai, Yuntao  and
+      Hatfield-Dodds, Zac  and
+      Clark, Jack  and
+      Bowman, Samuel R.  and
+      Askell, Amanda  and
+      Grosse, Roger  and
+      Hernandez, Danny  and
+      Ganguli, Deep  and
+      Hubinger, Evan  and
+      Schiefer, Nicholas  and
+      Kaplan, Jared",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.847/",
+    doi = "10.18653/v1/2023.findings-acl.847",
+    pages = "13387--13434",
+    abstract = "As language models (LMs) scale, they develop many novel behaviors, good and bad, exacerbating the need to evaluate how they behave. Prior work creates evaluations with crowdwork (which is time-consuming and expensive) or existing data sources (which are not always available). Here, we automatically generate evaluations with LMs. We explore approaches with varying amounts of human effort, from instructing LMs to write yes/no questions to making complex Winogender schemas with multiple stages of LM-based generation and filtering. Crowdworkers rate the examples as highly relevant and agree with 90-100{\%} of labels, sometimes more so than corresponding human-written datasets. We generate 154 datasets and discover new cases of inverse scaling where LMs get worse with size. Larger LMs repeat back a dialog user{'}s preferred answer ({``}sycophancy'') and express greater desire to pursue concerning goals like resource acquisition and goal preservation. We also find some of the first examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse. For example, RLHF makes LMs express stronger political views (on gun rights and immigration) and a greater desire to avoid shut down. Overall, LM-written evaluations are high-quality and let us quickly discover many novel LM behaviors."
+}
+
+@inproceedings{
+turpin2023language,
+title={Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting},
+author={Miles Turpin and Julian Michael and Ethan Perez and Samuel R. Bowman},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=bzs4uPLXvi}
+}
+
+@inproceedings{
+he2024pinpoint,
+title={From Yes-Men to Truth-Tellers: Addressing Sycophancy in Large Language Models with Pinpoint Tuning},
+author={Wei Chen and Zhen Huang and Liang Xie and Binbin Lin and Houqiang Li and Le Lu and Xinmei Tian and Deng Cai and Yonggang Zhang and Wenxiao Wang and Xu Shen and Jieping Ye},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=d2vONO90Rw}
+}
+
+@inproceedings{genadi2026sycophancy,
+    title = "Sycophancy Hides Linearly in the Attention Heads",
+    author = "Genadi, Rifo Ahmad  and
+      Nwadike, Munachiso Samuel  and
+      Mukhituly, Nurdaulet  and
+      Hiraoka, Tatsuya  and
+      AlQuabeh, Hilal  and
+      Inui, Kentaro",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.324/",
+    doi = "10.18653/v1/2026.eacl-long.324",
+    pages = "6896--6912",
+    ISBN = "979-8-89176-380-7",
+    abstract = "We find that correct-to-incorrect sycophancy signals are most linearly accessible within multi-head attention activations. Motivated by the linear representation hypothesis, we train linear probes across the residual stream, multilayer perceptron (MLP), and attention layers to analyze where these signals emerge. Although separability appears in the residual stream and MLPs, steering using these probes is most effective in a sparse subset of middle-layer attention heads. Using TruthfulQA as the base dataset, we find that probes trained on it transfer effectively to other factual QA benchmarks. Furthermore, comparing our discovered direction to previously identified ``truthful'' directions reveals limited overlap, suggesting that factual accuracy, and deference resistance, arise from related but distinct mechanisms. Attention-pattern analysis further indicates that the influential heads attend disproportionately to expressions of user doubt, contributing to sycophantic shifts. Overall, these findings suggest that sycophancy can be mitigated through simple, targeted linear interventions that exploit the internal geometry of attention activations. Code will be released upon publication."
+}
+
+@inproceedings{wang2026truth,
+  title={When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models},
+  author={Wang, Keyu and Li, Jin and Yang, Shu and Zhang, Zhuoran and Wang, Di},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2026}
+}
+
+@misc{vennemeyer2025distinct,
+      title={Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs}, 
+      author={Daniel Vennemeyer and Phan Anh Duong and Tiffany Zhan and Tianyu Jiang},
+      year={2026},
+      eprint={2509.21305},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.21305}, 
+}
+
+@misc{grattafiori2024llama,
+      title={The Llama 3 Herd of Models}, 
+      author={Aaron Grattafiori and Abhimanyu Dubey and Abhinav Jauhri and Abhinav Pandey and Abhishek Kadian and Ahmad Al-Dahle and Aiesha Letman and Akhil Mathur and Alan Schelten and Alex Vaughan and Amy Yang and Angela Fan and Anirudh Goyal and Anthony Hartshorn and Aobo Yang and Archi Mitra and Archie Sravankumar and Artem Korenev and Arthur Hinsvark and Arun Rao and Aston Zhang and Aurelien Rodriguez and Austen Gregerson and Ava Spataru and Baptiste Roziere and Bethany Biron and Binh Tang and Bobbie Chern and Charlotte Caucheteux and Chaya Nayak and Chloe Bi and Chris Marra and Chris McConnell and Christian Keller and Christophe Touret and Chunyang Wu and Corinne Wong and Cristian Canton Ferrer and Cyrus Nikolaidis and Damien Allonsius and Daniel Song and Danielle Pintz and Danny Livshits and Danny Wyatt and David Esiobu and Dhruv Choudhary and Dhruv Mahajan and Diego Garcia-Olano and Diego Perino and Dieuwke Hupkes and Egor Lakomkin and Ehab AlBadawy and Elina Lobanova and Emily Dinan and Eric Michael Smith and Filip Radenovic and Francisco Guzmán and Frank Zhang and Gabriel Synnaeve and Gabrielle Lee and Georgia Lewis Anderson and Govind Thattai and Graeme Nail and Gregoire Mialon and Guan Pang and Guillem Cucurell and Hailey Nguyen and Hannah Korevaar and Hu Xu and Hugo Touvron and Iliyan Zarov and Imanol Arrieta Ibarra and Isabel Kloumann and Ishan Misra and Ivan Evtimov and Jack Zhang and Jade Copet and Jaewon Lee and Jan Geffert and Jana Vranes and Jason Park and Jay Mahadeokar and Jeet Shah and Jelmer van der Linde and Jennifer Billock and Jenny Hong and Jenya Lee and Jeremy Fu and Jianfeng Chi and Jianyu Huang and Jiawen Liu and Jie Wang and Jiecao Yu and Joanna Bitton and Joe Spisak and Jongsoo Park and Joseph Rocca and Joshua Johnstun and Joshua Saxe and Junteng Jia and Kalyan Vasuden Alwala and Karthik Prasad and Kartikeya Upasani and Kate Plawiak and Ke Li and Kenneth Heafield and Kevin Stone and Khalid El-Arini and Krithika Iyer and Kshitiz Malik and Kuenley Chiu and Kunal Bhalla and Kushal Lakhotia and Lauren Rantala-Yeary and Laurens van der Maaten and Lawrence Chen and Liang Tan and Liz Jenkins and Louis Martin and Lovish Madaan and Lubo Malo and Lukas Blecher and Lukas Landzaat and Luke de Oliveira and Madeline Muzzi and Mahesh Pasupuleti and Mannat Singh and Manohar Paluri and Marcin Kardas and Maria Tsimpoukelli and Mathew Oldham and Mathieu Rita and Maya Pavlova and Melanie Kambadur and Mike Lewis and Min Si and Mitesh Kumar Singh and Mona Hassan and Naman Goyal and Narjes Torabi and Nikolay Bashlykov and Nikolay Bogoychev and Niladri Chatterji and Ning Zhang and Olivier Duchenne and Onur Çelebi and Patrick Alrassy and Pengchuan Zhang and Pengwei Li and Petar Vasic and Peter Weng and Prajjwal Bhargava and Pratik Dubal and Praveen Krishnan and Punit Singh Koura and Puxin Xu and Qing He and Qingxiao Dong and Ragavan Srinivasan and Raj Ganapathy and Ramon Calderer and Ricardo Silveira Cabral and Robert Stojnic and Roberta Raileanu and Rohan Maheswari and Rohit Girdhar and Rohit Patel and Romain Sauvestre and Ronnie Polidoro and Roshan Sumbaly and Ross Taylor and Ruan Silva and Rui Hou and Rui Wang and Saghar Hosseini and Sahana Chennabasappa and Sanjay Singh and Sean Bell and Seohyun Sonia Kim and Sergey Edunov and Shaoliang Nie and Sharan Narang and Sharath Raparthy and Sheng Shen and Shengye Wan and Shruti Bhosale and Shun Zhang and Simon Vandenhende and Soumya Batra and Spencer Whitman and Sten Sootla and Stephane Collot and Suchin Gururangan and Sydney Borodinsky and Tamar Herman and Tara Fowler and Tarek Sheasha and Thomas Georgiou and Thomas Scialom and Tobias Speckbacher and Todor Mihaylov and Tong Xiao and Ujjwal Karn and Vedanuj Goswami and Vibhor Gupta and Vignesh Ramanathan and Viktor Kerkez and Vincent Gonguet and Virginie Do and Vish Vogeti and Vítor Albiero and Vladan Petrovic and Weiwei Chu and Wenhan Xiong and Wenyin Fu and Whitney Meers and Xavier Martinet and Xiaodong Wang and Xiaofang Wang and Xiaoqing Ellen Tan and Xide Xia and Xinfeng Xie and Xuchao Jia and Xuewei Wang and Yaelle Goldschlag and Yashesh Gaur and Yasmine Babaei and Yi Wen and Yiwen Song and Yuchen Zhang and Yue Li and Yuning Mao and Zacharie Delpierre Coudert and Zheng Yan and Zhengxing Chen and Zoe Papakipos and Aaditya Singh and Aayushi Srivastava and Abha Jain and Adam Kelsey and Adam Shajnfeld and Adithya Gangidi and Adolfo Victoria and Ahuva Goldstand and Ajay Menon and Ajay Sharma and Alex Boesenberg and Alexei Baevski and Allie Feinstein and Amanda Kallet and Amit Sangani and Amos Teo and Anam Yunus and Andrei Lupu and Andres Alvarado and Andrew Caples and Andrew Gu and Andrew Ho and Andrew Poulton and Andrew Ryan and Ankit Ramchandani and Annie Dong and Annie Franco and Anuj Goyal and Aparajita Saraf and Arkabandhu Chowdhury and Ashley Gabriel and Ashwin Bharambe and Assaf Eisenman and Azadeh Yazdan and Beau James and Ben Maurer and Benjamin Leonhardi and Bernie Huang and Beth Loyd and Beto De Paola and Bhargavi Paranjape and Bing Liu and Bo Wu and Boyu Ni and Braden Hancock and Bram Wasti and Brandon Spence and Brani Stojkovic and Brian Gamido and Britt Montalvo and Carl Parker and Carly Burton and Catalina Mejia and Ce Liu and Changhan Wang and Changkyu Kim and Chao Zhou and Chester Hu and Ching-Hsiang Chu and Chris Cai and Chris Tindal and Christoph Feichtenhofer and Cynthia Gao and Damon Civin and Dana Beaty and Daniel Kreymer and Daniel Li and David Adkins and David Xu and Davide Testuggine and Delia David and Devi Parikh and Diana Liskovich and Didem Foss and Dingkang Wang and Duc Le and Dustin Holland and Edward Dowling and Eissa Jamil and Elaine Montgomery and Eleonora Presani and Emily Hahn and Emily Wood and Eric-Tuan Le and Erik Brinkman and Esteban Arcaute and Evan Dunbar and Evan Smothers and Fei Sun and Felix Kreuk and Feng Tian and Filippos Kokkinos and Firat Ozgenel and Francesco Caggioni and Frank Kanayet and Frank Seide and Gabriela Medina Florez and Gabriella Schwarz and Gada Badeer and Georgia Swee and Gil Halpern and Grant Herman and Grigory Sizov and Guangyi and Zhang and Guna Lakshminarayanan and Hakan Inan and Hamid Shojanazeri and Han Zou and Hannah Wang and Hanwen Zha and Haroun Habeeb and Harrison Rudolph and Helen Suk and Henry Aspegren and Hunter Goldman and Hongyuan Zhan and Ibrahim Damlaj and Igor Molybog and Igor Tufanov and Ilias Leontiadis and Irina-Elena Veliche and Itai Gat and Jake Weissman and James Geboski and James Kohli and Janice Lam and Japhet Asher and Jean-Baptiste Gaya and Jeff Marcus and Jeff Tang and Jennifer Chan and Jenny Zhen and Jeremy Reizenstein and Jeremy Teboul and Jessica Zhong and Jian Jin and Jingyi Yang and Joe Cummings and Jon Carvill and Jon Shepard and Jonathan McPhie and Jonathan Torres and Josh Ginsburg and Junjie Wang and Kai Wu and Kam Hou U and Karan Saxena and Kartikay Khandelwal and Katayoun Zand and Kathy Matosich and Kaushik Veeraraghavan and Kelly Michelena and Keqian Li and Kiran Jagadeesh and Kun Huang and Kunal Chawla and Kyle Huang and Lailin Chen and Lakshya Garg and Lavender A and Leandro Silva and Lee Bell and Lei Zhang and Liangpeng Guo and Licheng Yu and Liron Moshkovich and Luca Wehrstedt and Madian Khabsa and Manav Avalani and Manish Bhatt and Martynas Mankus and Matan Hasson and Matthew Lennie and Matthias Reso and Maxim Groshev and Maxim Naumov and Maya Lathi and Meghan Keneally and Miao Liu and Michael L. Seltzer and Michal Valko and Michelle Restrepo and Mihir Patel and Mik Vyatskov and Mikayel Samvelyan and Mike Clark and Mike Macey and Mike Wang and Miquel Jubert Hermoso and Mo Metanat and Mohammad Rastegari and Munish Bansal and Nandhini Santhanam and Natascha Parks and Natasha White and Navyata Bawa and Nayan Singhal and Nick Egebo and Nicolas Usunier and Nikhil Mehta and Nikolay Pavlovich Laptev and Ning Dong and Norman Cheng and Oleg Chernoguz and Olivia Hart and Omkar Salpekar and Ozlem Kalinli and Parkin Kent and Parth Parekh and Paul Saab and Pavan Balaji and Pedro Rittner and Philip Bontrager and Pierre Roux and Piotr Dollar and Polina Zvyagina and Prashant Ratanchandani and Pritish Yuvraj and Qian Liang and Rachad Alao and Rachel Rodriguez and Rafi Ayub and Raghotham Murthy and Raghu Nayani and Rahul Mitra and Rangaprabhu Parthasarathy and Raymond Li and Rebekkah Hogan and Robin Battey and Rocky Wang and Russ Howes and Ruty Rinott and Sachin Mehta and Sachin Siby and Sai Jayesh Bondu and Samyak Datta and Sara Chugh and Sara Hunt and Sargun Dhillon and Sasha Sidorov and Satadru Pan and Saurabh Mahajan and Saurabh Verma and Seiji Yamamoto and Sharadh Ramaswamy and Shaun Lindsay and Shaun Lindsay and Sheng Feng and Shenghao Lin and Shengxin Cindy Zha and Shishir Patil and Shiva Shankar and Shuqiang Zhang and Shuqiang Zhang and Sinong Wang and Sneha Agarwal and Soji Sajuyigbe and Soumith Chintala and Stephanie Max and Stephen Chen and Steve Kehoe and Steve Satterfield and Sudarshan Govindaprasad and Sumit Gupta and Summer Deng and Sungmin Cho and Sunny Virk and Suraj Subramanian and Sy Choudhury and Sydney Goldman and Tal Remez and Tamar Glaser and Tamara Best and Thilo Koehler and Thomas Robinson and Tianhe Li and Tianjun Zhang and Tim Matthews and Timothy Chou and Tzook Shaked and Varun Vontimitta and Victoria Ajayi and Victoria Montanez and Vijai Mohan and Vinay Satish Kumar and Vishal Mangla and Vlad Ionescu and Vlad Poenaru and Vlad Tiberiu Mihailescu and Vladimir Ivanov and Wei Li and Wenchen Wang and Wenwen Jiang and Wes Bouaziz and Will Constable and Xiaocheng Tang and Xiaojian Wu and Xiaolan Wang and Xilun Wu and Xinbo Gao and Yaniv Kleinman and Yanjun Chen and Ye Hu and Ye Jia and Ye Qi and Yenda Li and Yilin Zhang and Ying Zhang and Yossi Adi and Youngjin Nam and Yu and Wang and Yu Zhao and Yuchen Hao and Yundi Qian and Yunlu Li and Yuzi He and Zach Rait and Zachary DeVito and Zef Rosnbrick and Zhaoduo Wen and Zhenyu Yang and Zhiwei Zhao and Zhiyu Ma},
+      year={2024},
+      eprint={2407.21783},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2407.21783}, 
+}
+
+@inproceedings{
+hendrycks2021mmlu,
+title={Measuring Massive Multitask Language Understanding},
+author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=d7KBjmI3GmQ}
+}
+
+@inproceedings{zellers2019hellaswag,
+    title = "{H}ella{S}wag: Can a Machine Really Finish Your Sentence?",
+    author = "Zellers, Rowan  and
+      Holtzman, Ari  and
+      Bisk, Yonatan  and
+      Farhadi, Ali  and
+      Choi, Yejin",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1472/",
+    doi = "10.18653/v1/P19-1472",
+    pages = "4791--4800",
+    abstract = "Recent work by Zellers et al. (2018) introduced a new task of commonsense natural language inference: given an event description such as ``A woman sits at a piano,'' a machine must select the most likely followup: ``She sets her fingers on the keys.'' With the introduction of BERT, near human-level performance was reached. Does this mean that machines can perform human level commonsense inference? In this paper, we show that commonsense inference still proves difficult for even state-of-the-art models, by presenting HellaSwag, a new challenge dataset. Though its questions are trivial for humans ({\ensuremath{>}}95{\%} accuracy), state-of-the-art models struggle ({\ensuremath{<}}48{\%}). We achieve this via Adversarial Filtering (AF), a data collection paradigm wherein a series of discriminators iteratively select an adversarial set of machine-generated wrong answers. AF proves to be surprisingly robust. The key insight is to scale up the length and complexity of the dataset examples towards a critical `Goldilocks' zone wherein generated text is ridiculous to humans, yet often misclassified by state-of-the-art models. Our construction of HellaSwag, and its resulting difficulty, sheds light on the inner workings of deep pretrained models. More broadly, it suggests a new path forward for NLP research, in which benchmarks co-evolve with the evolving state-of-the-art in an adversarial way, so as to present ever-harder challenges."
+}
+
+@inproceedings{liu2020logiqa,
+  title     = {LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning},
+  author    = {Liu, Jian and Cui, Leyang and Liu, Hanmeng and Huang, Dandan and Wang, Yile and Zhang, Yue},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Christian Bessiere},
+  pages     = {3622--3628},
+  year      = {2020},
+  month     = {7},
+  note      = {Main track},
+  doi       = {10.24963/ijcai.2020/501},
+  url       = {https://doi.org/10.24963/ijcai.2020/501},
+}
+
+@inproceedings{lin2022truthfulqa,
+    title = "{T}ruthful{QA}: Measuring How Models Mimic Human Falsehoods",
+    author = "Lin, Stephanie  and
+      Hilton, Jacob  and
+      Evans, Owain",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.229/",
+    doi = "10.18653/v1/2022.acl-long.229",
+    pages = "3214--3252",
+    abstract = "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58{\%} of questions, while human performance was 94{\%}. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web."
+}
+
+@misc{sun2026persuaded,
+      title={How LLMs Are Persuaded: A Few Attention Heads, Rerouted}, 
+      author={Xiangkun Sun and Lingkai Kong and Aoqi Zhang and Liang Zeng and Tonghan Wang},
+      year={2026},
+      eprint={2605.09314},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2605.09314}, 
+}
+
+@misc{kumarappan2026notjustrlhf,
+      title={Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy}, 
+      author={Adarsh Kumarappan and Ananya Mujoo},
+      year={2026},
+      eprint={2605.12991},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.12991}, 
+}
+
+@inproceedings{feng2026goodarguments,
+    title = "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) {LLM} Sycophancy",
+    author = "Feng, Zhaoxin  and
+      Chen, Zheng  and
+      Ma, Jianfei  and
+      Po, Yip Tin  and
+      Chersoni, Emmanuele  and
+      Li, Bo",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1126/",
+    doi = "10.18653/v1/2026.acl-long.1126",
+    pages = "24536--24570",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Alignment techniques often inadvertently induce sycophancy in LLMs. While prior studies studied this behaviour in direct-answer settings, the role of Chain-of-Thought (CoT) reasoning remains under-explored: does it serve as a logical constraint that mitigates sycophancy, or a tool for post-hoc rationalization that masks it? We evaluate a range of models across objective and subjective tasks to investigate the issue.Results show that reasoning generally reduces sycophancy in final decisions but also masks sycophancy in some samples, where models construct deceptive justifications through logical inconsistencies, calculation errors, and one-sided arguments etc. Furthermore, LLMs are more prone to sycophancy in subjective tasks and under authority-bias. Our mechanistic analysis reveals that the tendency of sycophancy in LLMs is dynamic during the reasoning process rather than being pre-determined at the input."
+}
+
+% ---- added 15 Aug 2026 for the ICLR 2027 revision; every entry verified against arxiv.org/abs ----
+
+@misc{gupta2026directions,
+      title={How Does Alignment Tuning Shape Representations of Sycophancy and Related Cue-Induced Biases in LLMs?}, 
+      author={Prakhar Gupta and Terry Jingchen Zhang and Florent Draye and Bernhard Schölkopf and Zhijing Jin},
+      year={2026},
+      eprint={2607.18114},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2607.18114}, 
+}
+
+@misc{pandey2026sharedcircuit,
+      title={LLMs Know They're Wrong and Agree Anyway: The Shared Sycophancy-Lying Circuit}, 
+      author={Manav Pandey},
+      year={2026},
+      eprint={2604.19117},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2604.19117}, 
+}
+
+@inproceedings{
+lambert2024tulu3,
+title={Tulu 3: Pushing Frontiers in Open Language Model Post-Training},
+author={Nathan Lambert and Jacob Morrison and Valentina Pyatkin and Shengyi Huang and Hamish Ivison and Faeze Brahman and Lester James Validad Miranda and Alisa Liu and Nouha Dziri and Xinxi Lyu and Yuling Gu and Saumya Malik and Victoria Graf and Jena D. Hwang and Jiangjiang Yang and Ronan Le Bras and Oyvind Tafjord and Christopher Wilhelm and Luca Soldaini and Noah A. Smith and Yizhong Wang and Pradeep Dasigi and Hannaneh Hajishirzi},
+booktitle={Second Conference on Language Modeling},
+year={2025},
+url={https://openreview.net/forum?id=i1uGbfHHpH}
+}
+
+@inproceedings{
+olmo2024olmo2,
+title={2 {OLM}o 2 Furious ({COLM}{\textquoteright}s Version)},
+author={Evan Pete Walsh and Luca Soldaini and Dirk Groeneveld and Kyle Lo and Shane Arora and Akshita Bhagia and Yuling Gu and Shengyi Huang and Matt Jordan and Nathan Lambert and Dustin Schwenk and Oyvind Tafjord and Taira Anderson and David Atkinson and Faeze Brahman and Christopher Clark and Pradeep Dasigi and Nouha Dziri and Allyson Ettinger and Michal Guerquin and David Heineman and Hamish Ivison and Pang Wei Koh and Jiacheng Liu and Saumya Malik and William Merrill and Lester James Validad Miranda and Jacob Morrison and Tyler Murray and Crystal Nam and Jake Poznanski and Valentina Pyatkin and Aman Rangapur and Michael Schmitz and Sam Skjonsberg and David Wadden and Christopher Wilhelm and Michael Wilson and Luke Zettlemoyer and Ali Farhadi and Noah A. Smith and Hannaneh Hajishirzi},
+booktitle={Second Conference on Language Modeling},
+year={2025},
+url={https://openreview.net/forum?id=2ezugTT9kU}
+}
+
+@inproceedings{sinha2026sycobench,
+    title = "{S}yco{B}ench-600: Measuring Sycophancy and Correction Selectivity in {LLM} Assistants",
+    author = "Sinha, Debu",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1759/",
+    doi = "10.18653/v1/2026.findings-acl.1759",
+    pages = "35278--35284",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Modern instruction-following language models are optimized to be helpful and cooperative, often through preference-based alignment such as RLHF and related methods. A growing body of evidence shows that this training can also induce sycophancy: models may agree with a user even when the user is wrong, undermining reliability in decision support and high-stakes advice. We introduce SycoBench-600, a controlled multiple-choice benchmark that measures (i) susceptibility to three social-pressure perturbations (doubt, authority, and an explicit wrong suggestion) and (ii) correction selectivity, the ability to accept correct suggestions while resisting incorrect ones. The released benchmark contains 600 English MCQ instances over 272 normalized question stems, covers 8 domains and 3 difficulty tiers, and evaluates each instance under 3 fixed paraphrase variants of the perturbation prompts. We evaluate seven widely used assistants spanning proprietary and open-weight families. Results show substantial variation in pressure robustness and selective updating, and further show that willingness to update does not by itself imply selectivity. We release raw logs, validation scripts, and code that regenerates every table and figure from the model outputs."
+}
+
+@misc{ma2026suppression,
+      title={Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update}, 
+      author={Huanhuan Ma and Henry Peng Zou and Chengze Li and Enze Ma and Yunyue Su and Philip S. Yu},
+      year={2026},
+      eprint={2608.26511},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2608.26511}, 
+}
+
+@inproceedings{
+shapira2026rlhf,
+title={How {RLHF} Amplifies Sycophancy},
+author={Itai Shapira and Gerdus Benade and Ariel D. Procaccia},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=XN4pWKtA5h}
+}
+
+@misc{moskvoretskii2026persona,
+      title={Tracing Persona Vectors Through LLM Pretraining}, 
+      author={Viktor Moskvoretskii and Dominik Glandorf and Jorge Medina Moreira and Tanja Käser and Robert West},
+      year={2026},
+      eprint={2605.13329},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.13329}, 
+}
+
+@misc{joswin2026authority,
+      title={A Mechanistic View of Authority Hierarchy in LLM Sycophancy}, 
+      author={Emil Joswin and Srujananjali Medicherla and Priyanka Mary Mammen},
+      year={2026},
+      eprint={2607.00415},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2607.00415}, 
+}
+
+@inproceedings{
+tunstall2023zephyr,
+title={Zephyr: Direct Distillation of {LM} Alignment},
+author={Lewis Tunstall and Edward Emanuel Beeching and Nathan Lambert and Nazneen Rajani and Kashif Rasul and Younes Belkada and Shengyi Huang and Leandro Von Werra and Cl{\'e}mentine Fourrier and Nathan Habib and Nathan Sarrazin and Omar Sanseviero and Alexander M Rush and Thomas Wolf},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=aKkAwZB6JV}
+}
+
+@misc{wallace2024hierarchy,
+      title={The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions}, 
+      author={Eric Wallace and Kai Xiao and Reimar Leike and Lilian Weng and Johannes Heidecke and Alex Beutel},
+      year={2024},
+      eprint={2404.13208},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2404.13208}, 
+}
+
+@inproceedings{
+zhang2023pasta,
+title={Tell Your Model Where to Attend: Post-hoc Attention Steering for {LLM}s},
+author={Qingru Zhang and Chandan Singh and Liyuan Liu and Xiaodong Liu and Bin Yu and Jianfeng Gao and Tuo Zhao},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=xZDWO0oejD}
+}
+
+@misc{gotta2026modes,
+      title={Gotta Catch them all: the modes of Sycophancy}, 
+      author={Shreyans Jain and Alexandra Yost and Amirali Abdullah},
+      year={2026},
+      eprint={2607.20146},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2607.20146}, 
+}
+
+@inproceedings{shi2026rlfeatures,
+    title = "Why Does Reinforcement Learning Generalize? A Feature-Level Mechanistic Study of Post-Training in Large Language Models",
+    author = "Shi, Dan  and
+      Han, Zhuowen  and
+      Ostermann, Simon  and
+      Jin, Renren  and
+      van Genabith, Josef  and
+      Xiong, Deyi",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1808/",
+    doi = "10.18653/v1/2026.acl-long.1808",
+    pages = "38979--39000",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Reinforcement learning (RL)-based post-training often improves the reasoning performance of large language models (LLMs) beyond the training domain, while supervised fine-tuning (SFT) frequently leads to general capabilities forgetting. However, the mechanisms underlying this contrast remain unclear.To bridge this gap, we present a feature-level mechanistic analysis methodology to probe RL generalization using a controlled experimental setup, where RL- and SFT-tuned models are trained from the same base model on identical data. Leveraging our interpretability framework, we align internal activations across models within a shared feature space and analyze how features evolve during post-training.We find that SFT rapidly introduces many highly specialized features that stabilize early in training, whereas RL induces more restrained and continually evolving feature changes that largely preserve base models' representations. Focusing on samples where RL succeeds but the base model fails, we identify a compact, task-agnostic set of features that directly mediate generalization across diverse tasks. Feature-level interventions confirm their causal role: disabling these features significantly degrades RL models' generalization performance, while amplifying them improves base models' performance. The code is available at \url{https://github.com/danshi777/RL-generalization}."
+}
+
+@inproceedings{bigoulaeva2026patches,
+    title = "Patches of Nonlinearity: Instruction Vectors in Large Language Models",
+    author = "Bigoulaeva, Irina  and
+      Rohweder, Jonas  and
+      Dutta, Subhabrata  and
+      Gurevych, Iryna",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.559/",
+    doi = "10.18653/v1/2026.acl-long.559",
+    pages = "12209--12262",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Despite the recent success of instruction-tuned language models and their ubiquitous usage, very little is known of how models process instructions internally. In this work, we address this gap from a mechanistic point of view by investigating how instruction-specific representations are constructed and utilized in different stages of post-training: Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO). Via causal mediation, we identify that instruction representation is fairly localized in models. These representations, which we call Instruction Vectors (IVs), demonstrate a curious juxtaposition of linear separability along with non-linear causal interaction, broadly questioning the scope of the linear representation hypothesis commonplace in mechanistic interpretability. To disentangle the non-linear causal interaction, we propose a novel method to localize information processing in language models that is free from the implicit linear assumptions of patching-based techniques. We find that, conditioned on the task representations formed in the early layers, different information pathways are selected in the later layers to solve that task, i.e., IVs act as circuit selectors."
+}
+
+@inproceedings{
+zhang2026rlcircuitry,
+title={Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Diversity in the Internal Circuitry of {LLM}s},
+author={Honglin Zhang and Qianyue Hao and Fengli Xu and Yong Li},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=tzS9roOTdj}
+}
+
+% ---- added 3 Sep 2026; identifiers checked against arxiv.org ----
+
+@misc{gautam2026stack,
+      title={Consistency Training Along the Transformer Stack}, 
+      author={Sukrati Gautam and Neil Shah and Arav Dhoot and Bryan Maruyama and Caroline Wei and Rohan Kapoor and Robert Sidey and Prakhar Gupta and Zi Cheng Huang and David Demitri Africa},
+      year={2026},
+      eprint={2606.05817},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2606.05817}, 
+}
+
+@misc{imran2026ratematching,
+      title={Consistency Training while Mitigating Obfuscation via Rate Matching}, 
+      author={Sohaib Imran and Prakhar Gupta and Jannes Elstner and David Demitri Africa},
+      year={2026},
+      eprint={2606.02211},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.02211}, 
+}
+
+@misc{gupta2026grounding,
+      title={Context-Grounding Gains Are Mediated by Pre-existing Machinery: Auditing GRPO, SFT, and DPO}, 
+      author={Prakhar Gupta and Vaibhav Gupta},
+      year={2026},
+      eprint={2609.00925},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.00925}, 
+}
